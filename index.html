@@ -1,11 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosotros</title>
+    <title>Nosotros - ONG</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/styles.css">
+    <script defer src="public/js/script.js"></script>
 </head>
 <body>
-    
+    <header>
+        <nav class="navbar">
+            <div class="logo">EMPATIC</div>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="#nosotros">Nosotros <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <a href="#quienes-somos">¿Quiénes somos?</a>
+                        <a href="#areas">Áreas</a>
+                        <a href="#valores">Valores</a>
+                        <a href="#testimonios">Testimonios</a>
+                    </ul>
+                </li>
+                <li><a href="#consultoras">Consultoras</a></li>
+                <li><a href="#acciones">Acciones Empáticas</a></li>
+                <li><a href="#novedades">Novedades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            
+            <a href="#academy" class="cta">EMPATIC ACADEMY</a>
+    </header>
+
+    <section class="carousel" id="consultoras">
+        <div class="carousel-container">
+            <div class="slide active">
+                <img src="public/img/carrusel1.png" alt="Consultora 1">
+                <div class="carousel-text">
+                    <h2>Consultoras que maximizan tu impacto</h2>
+                    <p>Conecta con expertos en sostenibilidad, tecnología y financiamiento.</p>
+                    <p>con especialistas y transforma tu empresa.</p>
+                    <a href="#" class="btn">Más información</a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="public/img/carrusel2.png" alt="Consultora 2">
+                <div class="carousel-text">
+                    <h2>Impactamos con empatía e innovación</h2>
+                    <p>Somos un equipo de profesionales expertos que con empatía e innovación</p> 
+                    <p>centradas en las necesidades de nuestros clientes.</p>
+                    <a href="#" class="btn">Más información</a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="public/img/carrusel3.png" alt="Consultora 3">
+                <div class="carousel-text">
+                    <h2>Consultoras que maximizan tu impacto</h2>
+                    <p>Somos Grupo EMPATIC, una empresa especializada en brindar soluciones estratégicas a través</p>
+                    <p>especializadas en temas de sostenibilidad, tecnología y financiamiento.</p>
+                    <a href="#" class="btn">Más información</a>
+                </div>
+            </div>
+        </div>
+        <button class="prev" onclick="moveSlide(-1)"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="next" onclick="moveSlide(1)"><i class="fa-solid fa-chevron-right"></i></button>
+    </section>
 </body>
 </html>

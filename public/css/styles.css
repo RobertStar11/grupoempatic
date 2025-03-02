@@ -1,0 +1,233 @@
+/* ================================== */
+/* 🌐 RESET Y CONFIGURACIÓN GLOBAL   */
+/* ================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #111;
+    color: white;
+}
+
+/* ================================== */
+/* 📌 NAVBAR Y MENÚ PRINCIPAL        */
+/* ================================== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: black;
+}
+
+/* Estilos del menú principal */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    background: #00a8a8; /* Color al pasar el mouse */
+    border-radius: 5px;
+}
+
+/* ================================== */
+/* 📝 ESTILOS PARA LOS ENCABEZADOS   */
+/* ================================== */
+h1, h2, h3 {
+    font-weight: 700;
+    color: #00a8a8; /* Texto en negrita */
+}
+
+p, a {
+    font-weight: 400;
+    color: white; /* Texto normal */
+}
+
+/* Para los textos destacados en amarillo */
+.highlight {
+    color: #f1c40f;
+}
+
+/* ================================== */
+/* 🔽 MENÚ DESPLEGABLE               */
+/* ================================== */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: black;
+    width: 200px;
+    padding: 10px 0;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.dropdown-menu li {
+    padding: 10px;
+    width: 100%;
+}
+
+.dropdown-menu a {
+    display: block;
+    color: white;
+    padding: 10px;
+}
+
+.dropdown-menu a:hover {
+    background: #00a8a8;
+}
+
+/* Hacer que el menú se muestre al pasar el cursor */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Flecha del menú desplegable */
+.dropdown > a i {
+    margin-left: 5px;
+}
+
+/* ================================== */
+/* 🎨 BOTONES                        */
+/* ================================== */
+.cta {
+    padding: 10px 20px;
+    background: #00a8a8;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.cta:hover {
+    background: #008080;
+}
+
+/* ================================== */
+/* 📌 HERO SECTION                    */
+/* ================================== */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    text-align: center;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* ================================== */
+/* 🔘 BOTONES GENERALES               */
+/* ================================== */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: #f1c40f; /* Amarillo */
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.btn:hover {
+    background: #d4ac0d; /* Un tono más oscuro al pasar el mouse */
+    transform: scale(1.05); /* Efecto de crecimiento */
+}
+
+
+/* ================================== */
+/* 🎠 CARRUSEL                        */
+/* ================================== */
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 87vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 300%;
+}
+
+.slide {
+    min-width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Texto en el carrusel */
+.carousel-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    color: #00a8a8;
+    text-align: center;
+}
+
+/* ================================== */
+/* ◀️▶️ BOTONES DEL CARRUSEL        */
+/* ================================== */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.prev { left: 20px; }
+.next { right: 20px; }
+
+.prev:hover, .next:hover {
+    background: #00a8a8;
+}
