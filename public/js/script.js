@@ -1,19 +1,20 @@
 let currentIndex = 0;
+const slides = document.querySelectorAll(".slide");
 
 function moveSlide(step) {
-    const slides = document.querySelectorAll(".slide");
-    currentIndex += step;
+    slides[currentIndex].classList.remove("active");
 
+    currentIndex += step;
     if (currentIndex >= slides.length) {
         currentIndex = 0;
     } else if (currentIndex < 0) {
         currentIndex = slides.length - 1;
     }
 
-    document.querySelector(".carousel-container").style.transform = 
-        `translateX(-${currentIndex * 100}%)`;
+    slides[currentIndex].classList.add("active");
 }
 
+// Cambio automático cada 5 segundos
 setInterval(() => moveSlide(1), 5000);
 
 // ------------------ Menú Desplegable ------------------
