@@ -42,3 +42,48 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const configChart = (canvasId, labels, colors) => {
+        let ctx = document.getElementById(canvasId).getContext("2d");
+
+        return new Chart(ctx, {
+            type: "doughnut",
+            data: {
+                labels: labels,
+                datasets: [{
+                    data: [33.3, 33.3, 33.3],
+                    backgroundColor: colors,
+                    hoverOffset: 10
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function (tooltipItem) {
+                                return `${tooltipItem.label}: ${tooltipItem.raw}%`;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    };
+
+    // Gráfico: Áreas Estratégicas
+    configChart("areasEstrategicas",
+        ["Sostenibilidad", "Financiamiento", "Tecnología"],
+        ["#00a8a8", "#f1c40f", "#008080"]
+    );
+
+    // Gráfico: Fases de Crecimiento
+    configChart("fasesCrecimiento",
+        ["Diagnóstico Estratégico", "Plan de Acción", "Implementación"],
+        ["#00a8a8", "#f1c40f", "#008080"]
+    );
+});

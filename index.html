@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="public/css/styles.css">
-    <script defer src="public/js/script.js"></script>
-</head>
 <body>
     <header>
         <nav class="navbar">
@@ -111,6 +109,33 @@
         </div>
     </section>
 
+    <section class="metodologia">
+        <div class="metodologia-container">
+            <h2 class="metodologia-title">METODOLOGÍA</h2>
+            <p class="metodologia-text">
+                En Grupo Empatic creemos que el crecimiento empresarial sostenible requiere una visión integral.
+                Es por eso que nuestros servicios se estructuran bajo una metodología de DOBLE ENFOQUE 360°.
+                <br><br>
+                En 3 áreas estratégicas y 3 fases de crecimiento, asegurando una solución completa y alineada con las necesidades del mercado actual.
+            </p>
+            <h3 class="metodologia-subtitle">Doble Enfoque 360°</h3>
+    
+            <div class="charts-container">
+                <!-- Primer gráfico - Áreas Estratégicas -->
+                <div class="chart-box">
+                    <h4 class="chart-title">ÁREAS ESTRATÉGICAS</h4>
+                    <canvas id="areasEstrategicas"></canvas>
+                </div>
+    
+                <!-- Segundo gráfico - Fases de Crecimiento -->
+                <div class="chart-box">
+                    <h4 class="chart-title">FASES DE CRECIMIENTO</h4>
+                    <canvas id="fasesCrecimiento"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>    
+
     <section class="consultoras">
         <h2 class="consultoras-title">CONSULTORAS ESPECIALIZADAS</h2>
         <p class="consultoras-subtitle">En Grupo EMPATIC, resolvemos problemas y creamos soluciones estratégicas medibles e innovadoras a través de 3 áreas complementarias para generar una visión estratégica, fortalecer el crecimiento empresarial y asegurar un desarrollo sólido de tu negocio en el rubro.</p>
@@ -135,5 +160,8 @@
         
         <a href="#metodologia" class="consultoras-btn">¿Cómo lo hacemos?</a>
     </section>
+    <script defer src="public/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
 </body>
 </html>
