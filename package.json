@@ -2,6 +2,7 @@
   "dependencies": {
     "@tailwindcss/cli": "^4.0.12",
     "chart.js": "^4.4.8",
+    "chartjs-plugin-datalabels": "^2.2.0",
     "tailwindcss": "^4.0.12"
   }
 }
