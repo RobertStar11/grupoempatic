@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novedades - EMPATIC</title>
+
+    <!-- Estilos generales -->
+    <link rel="stylesheet" href="../public/css/novedades.css">
+    <link rel="stylesheet" href="../public/css/header.css">
+    <link rel="stylesheet" href="../public/css/footer.css">
+
+    <!-- Swiper (para carrusel) -->
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <link href="../src/output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+    <!-- Contenedor para el Header -->
+    <div id="header-container"></div>
+
+    <!-- Sección de Carrusel -->
+    <section class="relative w-full h-screen">
+        <div class="swiper mySwiper h-full">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide relative bg-center bg-cover h-screen" style="background-image: url('../public/img/imagen1.jpg');">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                        <div class="text-center text-white p-6">
+                            <h2 class="text-4xl font-bold">Lo último en EMPATIC</h2>
+                            <p class="mt-4 text-lg">Descubre las noticias más recientes sobre sostenibilidad, tecnología y financiamiento.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide relative bg-center bg-cover h-screen" style="background-image: url('../public/img/imagen2.jpg');">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                        <div class="text-center text-white p-6">
+                            <h2 class="text-4xl font-bold">Tendencias en innovación</h2>
+                            <p class="mt-4 text-lg">Explora las últimas investigaciones y proyectos de impacto social.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Botones de navegación -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <!-- Sección de Noticias Recientes -->
+    <section class="max-w-6xl mx-auto py-12 px-6">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6">Noticias Recientes</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+            <!-- Tarjeta 1 -->
+            <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                <img src="../public/img/imagen1.jpg" alt="Noticia 1" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold text-gray-900">Nueva iniciativa sostenible</h3>
+                    <p class="text-gray-600 mt-2">Descubre cómo nuestra última estrategia está ayudando a reducir la huella de carbono.</p>
+                    <a href="#" class="text-red-500 font-semibold mt-2 inline-block">Leer más →</a>
+                </div>
+            </div>
+            <!-- Tarjeta 2 -->
+            <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                <img src="../public/img/imagen2.jpg" alt="Noticia 2" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold text-gray-900">Tecnología para el impacto</h3>
+                    <p class="text-gray-600 mt-2">Exploramos cómo la inteligencia artificial puede ser clave en la sostenibilidad.</p>
+                    <a href="#" class="text-red-500 font-semibold mt-2 inline-block">Leer más →</a>
+                </div>
+            </div>
+            <!-- Tarjeta 3 -->
+            <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                <img src="../public/img/imagen3.jpg" alt="Noticia 3" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold text-gray-900">Financiamiento para startups</h3>
+                    <p class="text-gray-600 mt-2">Las mejores estrategias para asegurar inversión en proyectos de impacto.</p>
+                    <a href="#" class="text-red-500 font-semibold mt-2 inline-block">Leer más →</a>
+                </div>
+            </div>
+        </div>
+        <!-- Botón para más noticias -->
+        <div class="text-center mt-8">
+            <a href="#" class="bg-red-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-600 transition">Ver más noticias</a>
+        </div>
+    </section>
+
+    <!-- Contenedor para el Footer -->
+    <div id="footer-container"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../public/js/novedades.js"></script>
+    <script src="../public/js/loadComponents.js"></script>
+    <script src="../public/js/consultoras.js" defer></script>
+
+
+</body>
+</html>
