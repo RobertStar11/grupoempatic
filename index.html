@@ -6,44 +6,12 @@
     <title>Nosotros - ONG</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="public/css/output.css">
-    <link href="<?= base_url('public/dist/libs/fontawesome-free-6.7.2-web/css/fontawesome.css') ?>" rel="stylesheet" />
-    <link href="<?= base_url('public/dist/libs/fontawesome-free-6.7.2-web/css/solid.css') ?>" rel="stylesheet" />
+    <link href="public/libs/fontawesome-free-6.7.2-web/css/fontawesome.css" rel="stylesheet" />
+    <link href="public/libs/fontawesome-free-6.7.2-web/css/solid.css" rel="stylesheet" />
+    <link href="../src/output.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-
-    <header class="bg-black py-4 px-6 flex justify-between items-center">
-        <div class="text-white text-xl font-bold">EMPATIC</div>
-        <ul class="flex gap-6">
-            <li class="relative group">
-                <a href="#nosotros" class="text-white hover:bg-[#00a8a8] px-4 py-2 rounded-md flex items-center">
-                    Nosotros <i class="fa-solid fa-chevron-down ml-2"></i>
-                </a>
-                <ul class="absolute left-0 mt-2 bg-black w-48 hidden group-hover:block">
-                    <li><a href="#quienes-somos" class="block px-4 py-2 text-white hover:bg-[#00a8a8]">¿Quiénes somos?</a></li>
-                    <li><a href="#areas" class="block px-4 py-2 text-white hover:bg-[#00a8a8]">Áreas</a></li>
-                    <li><a href="#valores" class="block px-4 py-2 text-white hover:bg-[#00a8a8]">Valores</a></li>
-                    <li><a href="#testimonios" class="block px-4 py-2 text-white hover:bg-[#00a8a8]">Testimonios</a></li>
-                </ul>
-            </li>
-            <li><a href="#consultoras" class="text-white hover:bg-[#00a8a8] px-4 py-2 rounded-md">Consultoras</a></li>
-            <li><a href="#acciones" class="text-white hover:bg-[#00a8a8] px-4 py-2 rounded-md">Acciones Empáticas</a></li>
-            <li><a href="#novedades" class="text-white hover:bg-[#00a8a8] px-4 py-2 rounded-md">Novedades</a></li>
-            <li><a href="#contacto" class="text-white hover:bg-[#00a8a8] px-4 py-2 rounded-md">Contacto</a></li>
-        </ul>
-        <a href="#academy" class="bg-[#00a8a8] text-white px-6 py-2 rounded-full hover:bg-[#008080] transition">EMPATIC ACADEMY</a>
-    </header>    
-
-    <section class="relative w-full h-screen overflow-hidden">
-        <div class="absolute inset-0 flex items-center justify-center text-center bg-black bg-opacity-50">
-            <div>
-                <h2 class="text-[#00a8a8] text-3xl font-bold">Consultoras que maximizan tu impacto</h2>
-                <p class="text-white mt-2">Conecta con expertos en sostenibilidad, tecnología y financiamiento.</p>
-                <a href="#" class="bg-[#f1c40f] text-black font-semibold px-6 py-2 mt-4 inline-block rounded-md hover:bg-[#d4ac0d]">Más información</a>
-            </div>
-        </div>
-        <img src="public/img/carrusel_nosotros1.png" alt="Consultora 1" class="w-full h-full object-cover">
-    </section>
-
     <section class="bg-black text-white py-16 px-8 text-center">
         <!-- Título en el centro -->
         <div class="max-w-4xl mx-auto">
@@ -84,32 +52,37 @@
         </div>
     </section>      
 
-    <section class="metodologia">
-        <div class="metodologia-container">
-            <h2 class="metodologia-title">METODOLOGÍA</h2>
-            <p class="metodologia-text">
+    <section class="bg-black text-white py-16 px-8 text-center">
+        <!-- Encabezado -->
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-extrabold text-[#00a8a8]">METODOLOGÍA</h2>
+            <p class="text-lg mt-4">
                 En Grupo Empatic creemos que el crecimiento empresarial sostenible requiere una visión integral.
-                Es por eso que nuestros servicios se estructuran bajo una metodología de DOBLE ENFOQUE 360°.
-                <br><br>
-                En 3 áreas estratégicas y 3 fases de crecimiento, asegurando una solución completa y alineada con las necesidades del mercado actual.
+                Es por eso que nuestros servicios se estructuran bajo una metodología de 
+                <span class="font-bold">DOBLE ENFOQUE 360°.</span>
             </p>
-            <h3 class="metodologia-subtitle">Doble Enfoque 360°</h3>
+            <p class="text-lg mt-2">
+                En 3 áreas estratégicas y 3 fases de crecimiento, asegurando una solución completa y alineada con 
+                las necesidades del mercado actual.
+            </p>
+            <h3 class="text-2xl font-bold text-[#00a8a8] mt-6">Doble Enfoque 360°</h3>
+        </div>
     
-            <div class="charts-container">
-                <!-- Primer gráfico - Áreas Estratégicas -->
-                <div class="chart-box">
-                    <h4 class="chart-title">ÁREAS ESTRATÉGICAS</h4>
-                    <canvas id="areasEstrategicas"></canvas>
-                </div>
+        <!-- Contenedor de los gráficos -->
+        <div class="flex flex-col md:flex-row gap-8 mt-12 items-center justify-center">
+            <!-- Primer gráfico - Áreas Estratégicas -->
+            <div class="bg-[#181818] p-6 rounded-lg shadow-lg w-full md:w-1/2 max-w-md text-center">
+                <h4 class="text-lg font-semibold text-[#f1c40f] mb-4">ÁREAS ESTRATÉGICAS</h4>
+                <canvas id="areasEstrategicas" class="w-full h-auto"></canvas>
+            </div>
     
-                <!-- Segundo gráfico - Fases de Crecimiento -->
-                <div class="chart-box">
-                    <h4 class="chart-title">FASES DE CRECIMIENTO</h4>
-                    <canvas id="fasesCrecimiento"></canvas>
-                </div>
+            <!-- Segundo gráfico - Fases de Crecimiento -->
+            <div class="bg-[#181818] p-6 rounded-lg shadow-lg w-full md:w-1/2 max-w-md text-center">
+                <h4 class="text-lg font-semibold text-[#f1c40f] mb-4">FASES DE CRECIMIENTO</h4>
+                <canvas id="fasesCrecimiento" class="w-full h-auto"></canvas>
             </div>
         </div>
-    </section>    
+    </section>      
 
     <section class="bg-black text-white py-16 px-8 text-center">
         <h2 class="text-3xl font-bold text-[#00a8a8]">CONSULTORAS ESPECIALIZADAS</h2>
@@ -136,8 +109,7 @@
         </div>
     
         <a href="#metodologia" class="bg-[#f1c40f] text-black font-semibold px-6 py-2 mt-8 inline-block rounded-md hover:bg-[#d4ac0d]">¿Cómo lo hacemos?</a>
-    </section>
-    <script src="https://cdn.tailwindcss.com"></script>   
+    </section>  
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script defer src="public/js/script.js"></script>
 </body>

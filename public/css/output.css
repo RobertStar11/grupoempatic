@@ -263,9 +263,6 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
-  .left-0 {
-    left: calc(var(--spacing) * 0);
-  }
   .isolate {
     isolation: isolate;
   }
@@ -404,9 +401,6 @@
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
   }
-  .ml-2 {
-    margin-left: calc(var(--spacing) * 2);
-  }
   .box-border {
     box-sizing: border-box;
   }
@@ -526,9 +520,6 @@
   }
   .w-24 {
     width: calc(var(--spacing) * 24);
-  }
-  .w-48 {
-    width: calc(var(--spacing) * 48);
   }
   .w-\[350px\] {
     width: 350px;
@@ -1072,9 +1063,6 @@
   .rounded {
     border-radius: 0.25rem;
   }
-  .rounded-full {
-    border-radius: calc(infinity * 1px);
-  }
   .rounded-lg {
     border-radius: var(--radius-lg);
   }
@@ -1194,9 +1182,6 @@
   }
   .bg-\(color\:--my-color\) {
     background-color: var(--my-color);
-  }
-  .bg-\[\#00a8a8\] {
-    background-color: #00a8a8;
   }
   .bg-\[\#0088cc\] {
     background-color: #0088cc;
@@ -2081,13 +2066,6 @@
   .transform-view {
     transform-box: view-box;
   }
-  .group-hover\:block {
-    &:is(:where(.group):hover *) {
-      @media (hover: hover) {
-        display: block;
-      }
-    }
-  }
   .hover\:scale-105 {
     &:hover {
       @media (hover: hover) {
@@ -2102,13 +2080,6 @@
     &:hover {
       @media (hover: hover) {
         background-color: #00a8a8;
-      }
-    }
-  }
-  .hover\:bg-\[\#008080\] {
-    &:hover {
-      @media (hover: hover) {
-        background-color: #008080;
       }
     }
   }
