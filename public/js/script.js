@@ -1,8 +1,14 @@
-import Chart from 'chart.js/auto';
-
 document.addEventListener("DOMContentLoaded", function () {
-    if (document.getElementById("areasEstrategicas")) {
-        const ctx1 = document.getElementById("areasEstrategicas").getContext("2d");
+    // Verificar si Chart.js está cargado
+    if (typeof Chart === "undefined") {
+        console.error("Chart.js no está cargado. Verifica la referencia en tu HTML.");
+        return;
+    }
+
+    // Gráfico de Áreas Estratégicas
+    const canvas1 = document.getElementById("areasEstrategicas");
+    if (canvas1) {
+        const ctx1 = canvas1.getContext("2d");
         new Chart(ctx1, {
             type: "pie",
             data: {
@@ -13,10 +19,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 }]
             }
         });
+    } else {
+        console.warn("No se encontró el canvas #areasEstrategicas.");
     }
 
-    if (document.getElementById("fasesCrecimiento")) {
-        const ctx2 = document.getElementById("fasesCrecimiento").getContext("2d");
+    // Gráfico de Fases de Crecimiento
+    const canvas2 = document.getElementById("fasesCrecimiento");
+    if (canvas2) {
+        const ctx2 = canvas2.getContext("2d");
         new Chart(ctx2, {
             type: "doughnut",
             data: {
@@ -27,5 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }]
             }
         });
+    } else {
+        console.warn("No se encontró el canvas #fasesCrecimiento.");
     }
 });
