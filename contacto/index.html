@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../public/css/contacto.css">
+    <link rel="stylesheet" href="../public/css/header.css">
+    <link rel="stylesheet" href="../public/css/footer.css">
+
+    <!-- Fuente y estilos adicionales -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Contenedor para el Header -->
+    <div id="header-container"></div>
+
+    <!-- Sección de Contacto -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <h2>Contáctanos</h2>
+            <p>Si tienes alguna consulta, no dudes en escribirnos.</p>
+            
+            <form id="contact-form">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" placeholder="Tu nombre" required>
+                
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" placeholder="Tu correo" required>
+
+                <label for="message">Mensaje</label>
+                <textarea id="message" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contenedor para el Footer -->
+    <div id="footer-container"></div>
+
+    <!-- JavaScript -->
+    <script src="../public/js/loadComponents.js"></script>
+    <script src="../public/js/contacto.js"></script>
+
+</body>
+</html>
