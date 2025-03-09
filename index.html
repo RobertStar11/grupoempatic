@@ -5,112 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotros - ONG</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="public/css/output.css">
-    <link href="public/libs/fontawesome-free-6.7.2-web/css/fontawesome.css" rel="stylesheet" />
-    <link href="public/libs/fontawesome-free-6.7.2-web/css/solid.css" rel="stylesheet" />
-    <link href="../src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="public/libs/fontawesome-free-6.7.2-web/css/fontawesome.css">
+    <link rel="stylesheet" href="public/libs/fontawesome-free-6.7.2-web/css/solid.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
-<body>
-    <section class="bg-black text-white py-16 px-8 text-center">
-        <!-- Título en el centro -->
+<body class="bg-black text-white">
+
+    <!-- 📌 SECCIÓN NOSOTROS -->
+    <section class="py-16 px-8 text-center">
         <div class="max-w-4xl mx-auto">
             <h2 class="text-4xl font-extrabold text-[#00a8a8]">Grupo EMPATIC</h2>
             <h3 class="text-2xl font-bold text-[#00a8a8] mt-2 leading-tight">
-                es un conjunto de consultoras especializadas en brindar soluciones empresariales desde
-                la empatía e innovación.
+                es un conjunto de consultoras especializadas en brindar soluciones empresariales desde la empatía e innovación.
             </h3>
         </div>
-    
-        <!-- Contenedor para Video + Texto -->
         <div class="flex flex-col md:flex-row gap-12 mt-12 items-center justify-center">
-            <!-- Contenedor del Video -->
             <div class="w-full md:w-1/3 flex justify-center">
                 <video controls class="w-[350px] md:w-[400px] rounded-md">
                     <source src="public/videos/video_objetivos.mp4" type="video/mp4">
                     Tu navegador no soporta la reproducción de videos.
                 </video>
             </div>
-    
-            <!-- Contenedor del Texto -->
             <div class="w-full md:w-2/3 text-left space-y-4 max-w-xl">
                 <p class="text-lg">
-                    Brindamos consultorías especializadas en 
-                    <span class="font-bold">sostenibilidad, tecnología y financiamiento</span>, a través de profesionales expertos.
+                    Brindamos consultorías especializadas en <span class="font-bold">sostenibilidad, tecnología y financiamiento</span>, a través de profesionales expertos.
                 </p>
-                <p class="text-lg">
-                    Aseguramos el crecimiento de las empresas, startups y organizaciones, 
-                    maximizando su impacto a nivel económico, tecnológico, ambiental y social.
-                </p>
-                <p class="text-lg">
-                    Nuestra misión es posicionar a nuestros clientes como líderes en sus respectivos rubros.
-                </p>
-                <p class="text-lg">
-                    Nuestra visión es ser la plataforma líder en consultorías para empresas en Latinoamérica.
-                </p>
+                <p class="text-lg">Aseguramos el crecimiento de las empresas, startups y organizaciones, maximizando su impacto a nivel económico, tecnológico, ambiental y social.</p>
+                <p class="text-lg">Nuestra misión es posicionar a nuestros clientes como líderes en sus respectivos rubros.</p>
+                <p class="text-lg">Nuestra visión es ser la plataforma líder en consultorías para empresas en Latinoamérica.</p>
             </div>
         </div>
     </section>      
 
-    <section class="bg-black text-white py-16 px-8 text-center">
-        <!-- Encabezado -->
+    <!-- 📌 SECCIÓN METODOLOGÍA -->
+    <section class="py-16 px-8 text-center">
         <div class="max-w-4xl mx-auto">
             <h2 class="text-3xl font-extrabold text-[#00a8a8]">METODOLOGÍA</h2>
             <p class="text-lg mt-4">
                 En Grupo Empatic creemos que el crecimiento empresarial sostenible requiere una visión integral.
-                Es por eso que nuestros servicios se estructuran bajo una metodología de 
-                <span class="font-bold">DOBLE ENFOQUE 360°.</span>
+                Es por eso que nuestros servicios se estructuran bajo una metodología de <span class="font-bold">DOBLE ENFOQUE 360°.</span>
             </p>
             <p class="text-lg mt-2">
-                En 3 áreas estratégicas y 3 fases de crecimiento, asegurando una solución completa y alineada con 
-                las necesidades del mercado actual.
+                En 3 áreas estratégicas y 3 fases de crecimiento, asegurando una solución completa y alineada con las necesidades del mercado actual.
             </p>
             <h3 class="text-2xl font-bold text-[#00a8a8] mt-6">Doble Enfoque 360°</h3>
         </div>
-    
+
         <!-- Contenedor de los gráficos -->
         <div class="flex flex-col md:flex-row gap-8 mt-12 items-center justify-center">
-            <!-- Primer gráfico - Áreas Estratégicas -->
             <div class="bg-[#181818] p-6 rounded-lg shadow-lg w-full md:w-1/2 max-w-md text-center">
                 <h4 class="text-lg font-semibold text-[#f1c40f] mb-4">ÁREAS ESTRATÉGICAS</h4>
-                <canvas id="areasEstrategicas" class="w-full h-auto"></canvas>
+                <canvas id="areasEstrategicas"></canvas>
             </div>
-    
-            <!-- Segundo gráfico - Fases de Crecimiento -->
+
             <div class="bg-[#181818] p-6 rounded-lg shadow-lg w-full md:w-1/2 max-w-md text-center">
                 <h4 class="text-lg font-semibold text-[#f1c40f] mb-4">FASES DE CRECIMIENTO</h4>
-                <canvas id="fasesCrecimiento" class="w-full h-auto"></canvas>
+                <canvas id="fasesCrecimiento"></canvas>
             </div>
         </div>
     </section>      
 
-    <section class="bg-black text-white py-16 px-8 text-center">
-        <h2 class="text-3xl font-bold text-[#00a8a8]">CONSULTORAS ESPECIALIZADAS</h2>
-        <p class="text-white mt-4 max-w-2xl mx-auto">
-            En Grupo EMPATIC, resolvemos problemas y creamos soluciones estratégicas medibles e innovadoras a través de 3 áreas complementarias.
-        </p>
-    
-        <div class="flex flex-col md:flex-row gap-6 justify-center mt-8">
-            <div class="bg-gray-900 p-6 rounded-lg flex-1 transition-transform transform hover:scale-105 hover:bg-[#f1c40f]">
-                <img src="public/img/sostenibilidad_nosotros.png" class="w-24 mx-auto rounded-md">
-                <h3 class="text-lg font-semibold mt-4">EMPATIC SOSTENIBILIDAD</h3>
-                <p class="text-sm mt-2">Ayudamos a las empresas a integrar estrategias de impacto social, ambiental y económico.</p>
-            </div>
-            <div class="bg-gray-900 p-6 rounded-lg flex-1 transition-transform transform hover:scale-105 hover:bg-[#00a8a8]">
-                <img src="public/img/tecnologia_nosotros.png" class="w-24 mx-auto rounded-md">
-                <h3 class="text-lg font-semibold mt-4">EMPATIC TECNOLOGÍA</h3>
-                <p class="text-sm mt-2">Facilitamos la digitalización y la adopción tecnológica para la transformación digital.</p>
-            </div>
-            <div class="bg-gray-900 p-6 rounded-lg flex-1 transition-transform transform hover:scale-105 hover:bg-[#d4ac0d]">
-                <img src="public/img/financiamiento_nosotros.png" class="w-24 mx-auto rounded-md">
-                <h3 class="text-lg font-semibold mt-4">EMPATIC FINANCIAMIENTO</h3>
-                <p class="text-sm mt-2">Diseñamos estrategias para atraer inversionistas, acceder a fondos y optimizar la rentabilidad.</p>
-            </div>
-        </div>
-    
-        <a href="#metodologia" class="bg-[#f1c40f] text-black font-semibold px-6 py-2 mt-8 inline-block rounded-md hover:bg-[#d4ac0d]">¿Cómo lo hacemos?</a>
-    </section>  
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- 📌 SCRIPT DE GRÁFICOS -->
     <script defer src="public/js/script.js"></script>
 </body>
 </html>
