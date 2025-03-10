@@ -81,3 +81,26 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Seleccionar todas las tarjetas de estrategia
+    const strategyCards = document.querySelectorAll(".strategy-card");
+
+    strategyCards.forEach(card => {
+        card.addEventListener("mouseenter", () => {
+            card.style.backgroundColor = "#00a8a8"; // Color turquesa al pasar el cursor
+            card.style.transition = "background 0.3s ease-in-out";
+        });
+
+        card.addEventListener("mouseleave", () => {
+            card.style.backgroundColor = "#181818"; // Color original al quitar el cursor
+        });
+
+        card.addEventListener("click", () => {
+            const url = card.getAttribute("data-url");
+            if (url) {
+                window.location.href = url; // Redirigir a la sección correspondiente
+            }
+        });
+    });
+});
