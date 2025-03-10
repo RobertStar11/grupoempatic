@@ -126,6 +126,85 @@
         </a>
     </section>
 
+    <section class="py-16 px-8 text-center relative">
+        <h2 class="text-3xl font-extrabold text-[#00a8a8]">FASES DE CRECIMIENTO</h2>
+        <p class="text-lg max-w-2xl mx-auto mt-4">
+            Nuestra metodología sigue tres fases clave que garantizan un impacto real y medible, aplicando un enfoque integral,
+            estratégico y orientado a resultados. Nos basamos en metodologías probadas en consultoría empresarial.
+        </p>
+    
+        <!-- Flecha SVG -->
+        <svg class="absolute left-16 md:left-1/4 top-32 md:top-24 w-3/4 h-32 md:h-40 z-0" viewBox="0 0 600 200">
+            <defs>
+                <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+                    <polygon points="0 0, 10 3.5, 0 7" fill="#f1c40f" />
+                </marker>
+            </defs>
+            <line x1="50" y1="150" x2="550" y2="50" stroke="url(#gradient)" stroke-width="6" stroke-dasharray="10,10"
+                marker-end="url(#arrowhead)" />
+            <linearGradient id="gradient">
+                <stop offset="0%" stop-color="#00a8a8" />
+                <stop offset="100%" stop-color="#f1c40f" />
+            </linearGradient>
+        </svg>
+    
+        <!-- Contenedor del gráfico -->
+        <div class="relative w-full max-w-5xl mx-auto mt-16 flex flex-col md:flex-row items-center justify-between z-10">
+            <!-- Fase 1 -->
+            <div class="relative w-full md:w-1/3 bg-[#181818] p-6 rounded-lg border-t-4 border-[#00a8a8] text-center transition-transform transform hover:scale-105 cursor-pointer" 
+                 onmouseover="mostrarDetalle(1)" 
+                 onmouseout="ocultarDetalle(1)">
+                <p class="font-bold text-white">1. Diagnóstico Estratégico 📊</p>
+                <p class="text-sm text-gray-300 mt-1">(Empatizamos con tu negocio y detectamos oportunidades)</p>
+    
+                <div id="detalle-1" class="hidden mt-4 bg-black p-4 rounded-lg text-left">
+                    <ul class="text-sm text-gray-300">
+                        <li>📌 Evaluar la empresa o proyecto</li>
+                        <li>📌 Identificar oportunidades y desafíos</li>
+                        <li>📌 Análisis de datos y tendencias</li>
+                    </ul>
+                    <p class="mt-2 text-[#f1c40f] text-xs font-semibold">Design Thinking (Brown, 2009)</p>
+                    <p class="text-xs text-gray-400">Nos permite empatizar y definir las necesidades del cliente.</p>
+                </div>
+            </div>
+    
+            <!-- Fase 2 -->
+            <div class="relative w-full md:w-1/3 bg-[#181818] p-6 rounded-lg border-t-4 border-[#4CAF50] text-center transition-transform transform hover:scale-105 cursor-pointer"
+                 onmouseover="mostrarDetalle(2)" 
+                 onmouseout="ocultarDetalle(2)">
+                <p class="font-bold text-white">2. Plan de Acción Personalizado 📋</p>
+                <p class="text-sm text-gray-300 mt-1">(Diseñamos soluciones estratégicas a la medida de tu empresa)</p>
+    
+                <div id="detalle-2" class="hidden mt-4 bg-black p-4 rounded-lg text-left">
+                    <ul class="text-sm text-gray-300">
+                        <li>📌 Definir estrategias a medida</li>
+                        <li>📌 Definición de objetivos SMART</li>
+                        <li>📌 Planificar acciones y cronograma</li>
+                    </ul>
+                    <p class="mt-2 text-[#f1c40f] text-xs font-semibold">Ciclo de Mejora Continua (PDCA) (Deming, 1980)</p>
+                    <p class="text-xs text-gray-400">Asegura planificación, ejecución y ajuste continuo.</p>
+                </div>
+            </div>
+    
+            <!-- Fase 3 -->
+            <div class="relative w-full md:w-1/3 bg-[#181818] p-6 rounded-lg border-t-4 border-[#f1c40f] text-center transition-transform transform hover:scale-105 cursor-pointer"
+                 onmouseover="mostrarDetalle(3)" 
+                 onmouseout="ocultarDetalle(3)">
+                <p class="font-bold text-white">3. Implementación y Acompañamiento 🚀</p>
+                <p class="text-sm text-gray-300 mt-1">(Convertimos la estrategia en resultados tangibles)</p>
+    
+                <div id="detalle-3" class="hidden mt-4 bg-black p-4 rounded-lg text-left">
+                    <ul class="text-sm text-gray-300">
+                        <li>📌 Ejecución de estrategias</li>
+                        <li>📌 Monitorear resultados</li>
+                        <li>📌 Ajustes y optimización continua</li>
+                    </ul>
+                    <p class="mt-2 text-[#f1c40f] text-xs font-semibold">Lean Startup (Ries, 2011)</p>
+                    <p class="text-xs text-gray-400">Permite validar soluciones rápidamente y garantizar resultados óptimos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- 📌 SCRIPT DE GRÁFICOS -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

@@ -104,3 +104,11 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+function mostrarDetalle(fase) {
+    document.getElementById(`detalle-${fase}`).classList.remove("hidden");
+}
+
+function ocultarDetalle(fase) {
+    document.getElementById(`detalle-${fase}`).classList.add("hidden");
+}
