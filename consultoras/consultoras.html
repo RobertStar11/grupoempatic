@@ -9,74 +9,75 @@
     <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
 
     <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="../src/output.css" rel="stylesheet">  
+
 
     <!-- Estilos personalizados -->
     <link rel="stylesheet" href="../public/css/header.css">
 </head>
-<body class="font-sans bg-white">
+<body class="font-sans bg-black">
 
     <!-- Header -->
-    <header class="bg-white shadow-md sticky top-0 z-50">
+    <header class="bg-black shadow-md sticky top-0 z-50">
         <nav class="max-w-7xl mx-auto flex items-center justify-between p-4">
-            <div class="text-2xl font-bold text-red-600 uppercase">EMPATIC</div>
+            <div class="text-2xl font-bold text-[#00a8a8] uppercase">EMPATIC</div>
             <div class="md:hidden">
                 <button id="menu-toggle" class="text-gray-700 text-2xl">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
-            <ul class="hidden md:flex space-x-6 text-gray-700 font-medium" id="nav-links">
+            <ul class="hidden md:flex space-x-6 text-white font-medium" id="nav-links">
                 <!-- Nosotros -->
                 <li class="relative">
-                    <button class="menu-btn hover:bg-red-600 hover:text-white hover:scale-110 origin-center will-change-transform transition-transform duration-200 px-4 py-2 rounded-md">NOSOTROS</button>
-                    <ul class="submenu hidden absolute bg-white shadow-lg w-48 mt-2">
-                        <li><a href="#" class="block px-4 py-2 hover:bg-red-600 hover:text-white hover:scale-110 origin-center will-change-transform transition-transform duration-200 rounded-md">Quiénes Somos</a></li>
-                        <li><a href="#" class="block px-4 py-2 hover:bg-red-600 hover:text-white hover:scale-110 origin-center will-change-transform transition-transform duration-200 rounded-md">Metodología</a></li>
-                        <li><a href="#" class="block px-4 py-2 hover:bg-red-600 hover:text-white hover:scale-110 origin-center will-change-transform transition-transform duration-200 rounded-md">Valores</a></li>
-                        <li><a href="#" class="block px-4 py-2 hover:bg-red-600 hover:text-white hover:scale-110 origin-center will-change-transform transition-transform duration-200 rounded-md">Testimonios</a></li>
+                    <button class="menu-btn hover:bg-[#00a8a8] hover:text-white hover:scale-110 origin-center will-change-transform transition-transform duration-200 px-4 py-2 rounded-md">NOSOTROS</button>
+                    <ul class="submenu hidden absolute bg-black shadow-lg w-48 mt-2">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-[#00a8a8] hover:text-white hover:scale-110 origin-center will-change-transform transition-transform duration-200 rounded-md">Quiénes Somos</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-[#00a8a8] hover:text-white hover:scale-110 origin-center will-change-transform transition-transform duration-200 rounded-md">Metodología</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-[#00a8a8] hover:text-white hover:scale-110 origin-center will-change-transform transition-transform duration-200 rounded-md">Valores</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-[#00a8a8] hover:text-white hover:scale-110 origin-center will-change-transform transition-transform duration-200 rounded-md">Testimonios</a></li>
                     </ul>
                 </li>
                 <!-- Consultoras -->
                 <li class="relative">
-                    <button class="menu-btn hover:bg-red-600 hover:text-white hover:scale-110 origin-center will-change-transform transition-all duration-200 px-4 py-2 rounded-md">CONSULTORAS</button>
-                    <ul class="submenu hidden absolute bg-white shadow-lg w-48 mt-2">
-                        <li><a href="#" class="block px-4 py-2 hover:bg-red-600 hover:text-white hover:scale-110 origin-center will-change-transform transition-transform duration-200 rounded-md">Marketplace</a></li>
-                        <li><a href="#" class="block px-4 py-2 hover:bg-red-600 hover:text-white hover:scale-110 origin-center will-change-transform transition-transform duration-200 rounded-md">Empatic Sostenibilidad</a></li>
-                        <li><a href="#" class="block px-4 py-2 hover:bg-red-600 hover:text-white hover:scale-110 origin-center will-change-transform transition-transform duration-200 rounded-md">Empatic Tecnología</a></li>
-                        <li><a href="#" class="block px-4 py-2 hover:bg-red-600 hover:text-white hover:scale-110 origin-center will-change-transform transition-transform duration-200 rounded-md">Empatic Financiamiento</a></li>
+                    <button class="menu-btn hover:bg-[#00a8a8] hover:text-white hover:scale-110 origin-center will-change-transform transition-all duration-200 px-4 py-2 rounded-md">CONSULTORAS</button>
+                    <ul class="submenu hidden absolute bg-black shadow-lg w-48 mt-2">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-[#00a8a8] hover:text-white hover:scale-110 origin-center will-change-transform transition-transform duration-200 rounded-md">Marketplace</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-[#00a8a8] hover:text-white hover:scale-110 origin-center will-change-transform transition-transform duration-200 rounded-md">Empatic Sostenibilidad</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-[#00a8a8] hover:text-white hover:scale-110 origin-center will-change-transform transition-transform duration-200 rounded-md">Empatic Tecnología</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-[#00a8a8] hover:text-white hover:scale-110 origin-center will-change-transform transition-transform duration-200 rounded-md">Empatic Financiamiento</a></li>
                     </ul>
                 </li>
                 <!-- Acciones Empáticas -->
                 <li class="relative">
-                    <button class="menu-btn hover:bg-red-600 hover:text-white hover:scale-110 origin-center will-change-transform transition-all duration-200 px-4 py-2 rounded-md">ACCIONES EMPÁTICAS</button>
-                    <ul class="submenu hidden absolute bg-white shadow-lg w-48 mt-2">
-                        <li><a href="#" class="block px-4 py-2 hover:bg-red-600 hover:text-white hover:scale-110 origin-center will-change-transform transition-transform duration-200 rounded-md">A Propósito</a></li>
-                        <li><a href="#" class="block px-4 py-2 hover:bg-red-600 hover:text-white hover:scale-110 origin-center will-change-transform transition-transform duration-200 rounded-md">Impacto</a></li>
-                        <li><a href="#" class="block px-4 py-2 hover:bg-red-600 hover:text-white hover:scale-110 origin-center will-change-transform transition-transform duration-200 rounded-md">Proyectos</a></li>
-                        <li><a href="#" class="block px-4 py-2 hover:bg-red-600 hover:text-white hover:scale-110 origin-center will-change-transform transition-transform duration-200 rounded-md">Comunidad</a></li>
+                    <button class="menu-btn hover:bg-[#00a8a8] hover:text-white hover:scale-110 origin-center will-change-transform transition-all duration-200 px-4 py-2 rounded-md">ACCIONES EMPÁTICAS</button>
+                    <ul class="submenu hidden absolute bg-black shadow-lg w-48 mt-2">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-[#00a8a8] hover:text-white hover:scale-110 origin-center will-change-transform transition-transform duration-200 rounded-md">A Propósito</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-[#00a8a8] hover:text-white hover:scale-110 origin-center will-change-transform transition-transform duration-200 rounded-md">Impacto</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-[#00a8a8] hover:text-white hover:scale-110 origin-center will-change-transform transition-transform duration-200 rounded-md">Proyectos</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-[#00a8a8] hover:text-white hover:scale-110 origin-center will-change-transform transition-transform duration-200 rounded-md">Comunidad</a></li>
                     </ul>
                 </li>
                 <!-- Novedades -->
                 <li class="relative">
-                    <button class="menu-btn hover:bg-red-600 hover:text-white hover:scale-110 origin-center will-change-transform transition-all duration-200 px-4 py-2 rounded-md">NOVEDADES</button>
-                    <ul class="submenu hidden absolute bg-white shadow-lg w-48 mt-2">
-                        <li><a href="#" class="block px-4 py-2 hover:bg-red-600 hover:text-white hover:scale-110 origin-center will-change-transform transition-transform duration-200 rounded-md">Talento</a></li>
-                        <li><a href="#" class="block px-4 py-2 hover:bg-red-600 hover:text-white hover:scale-110 origin-center will-change-transform transition-transform duration-200 rounded-md">Blog</a></li>
-                        <li><a href="#" class="block px-4 py-2 hover:bg-red-600 hover:text-white hover:scale-110 origin-center will-change-transform transition-transform duration-200 rounded-md">Publicaciones</a></li>
-                        <li><a href="#" class="block px-4 py-2 hover:bg-red-600 hover:text-white hover:scale-110 origin-center will-change-transform transition-transform duration-200 rounded-md">Noticias</a></li>
+                    <button class="menu-btn hover:bg-[#00a8a8] hover:text-white hover:scale-110 origin-center will-change-transform transition-all duration-200 px-4 py-2 rounded-md">NOVEDADES</button>
+                    <ul class="submenu hidden absolute bg-black shadow-lg w-48 mt-2">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-[#00a8a8] hover:text-white hover:scale-110 origin-center will-change-transform transition-transform duration-200 rounded-md">Talento</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-[#00a8a8] hover:text-white hover:scale-110 origin-center will-change-transform transition-transform duration-200 rounded-md">Blog</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-[#00a8a8] hover:text-white hover:scale-110 origin-center will-change-transform transition-transform duration-200 rounded-md">Publicaciones</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-[#00a8a8] hover:text-white hover:scale-110 origin-center will-change-transform transition-transform duration-200 rounded-md">Noticias</a></li>
                     </ul>
                 </li>
                 <!-- Contacto -->
-                <li><a href="../contacto/index.html" class="inline-block hover:bg-red-600 hover:text-white hover:scale-110 origin-center will-change-transform transition-all duration-200 px-4 py-2 rounded-md">CONTACTO</a></li>
+                <li><a href="../contacto/index.html" class="inline-block hover:bg-[#00a8a8] hover:text-white hover:scale-110 origin-center will-change-transform transition-all duration-200 px-4 py-2 rounded-md">CONTACTO</a></li>
             </ul>
-            <a href="#academy" class="hidden md:block bg-red-600 text-white px-4 py-2 rounded-md font-bold hover:bg-red-700">
+            <a href="#academy" class="hidden md:block bg-[#00a8a8] text-white px-4 py-2 rounded-md font-bold hover:bg-[#008080]">
                 EMPATIC ACADEMY
             </a>
         </nav>
     </header>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white text-center py-4 mt-10">
+    <footer class="bg-black text-white text-center py-4 mt-10">
         <p>&copy; 2025 EMPATIC. Todos los derechos reservados.</p>
     </footer>
 
